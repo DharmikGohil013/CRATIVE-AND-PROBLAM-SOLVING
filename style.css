@@ -1,0 +1,303 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    overflow-x: hidden;
+}
+/* Header Styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subheading {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* Navigation Buttons in Header */
+.header-buttons {
+    margin-top: 20px;
+}
+
+.header-buttons button {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    margin: 0 10px;
+}
+
+.header-buttons button:hover {
+    background-color: #333;
+    color: white;
+    transform: scale(1.05);
+}
+
+.header-buttons button:focus {
+    outline: none;
+}
+
+/* Basic Heading and Text */
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subheading {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* Section Styles */
+section {
+    margin: 50px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Problem Section Styles */
+#problem-introduction img, .factors-grid img, .scamper-grid img, #mind-map img, #fishbone-diagram img {
+    display: block;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Factors Grid for Layout */
+.factors-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.factor {
+    width: 45%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.factor img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.factor img:hover {
+    transform: scale(1.05);
+}
+
+/* SCAMPER Grid */
+.scamper-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.scamper-item {
+    width: 30%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.scamper-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.scamper-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 22%;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Applying Animations to Sections */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+.zoom-in {
+    animation: zoomIn 1s ease-in;
+}
+
+.slide-up {
+    animation: slideUp 1s ease-out;
+}
+
+.slide-right {
+    animation: slideRight 1s ease-in-out;
+}
+
+/* Footer Styles */
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Flexbox Layout for person details */
+.person-details {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    gap: 50px; /* Add space between the items */
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    padding: 20px 0;
+}
+
+.person {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.person:hover {
+    transform: scale(1.05);
+}
+
+.person h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.person p {
+    margin: 5px 0;
+}
+
+.person a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.person a:hover {
+    color: #ffffff;
+}
+
+/* Footer Copyright */
+footer p {
+    margin-top: 30px;
+    font-size: 0.8rem;
+}
+
+/* Media query to handle smaller screen sizes */
+@media (max-width: 768px) {
+    .person-details {
+        flex-direction: column; /* Stack the person details vertically on small screens */
+        align-items: center;
+    }
+
+    .person {
+        width: 90%; /* Adjust the width to fit smaller screens */
+    }
+}
